@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Elmia Najwa Maghfiroh!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .slides-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            font-size: 2em;
+            transition: 1s;
+            opacity: 0;
+            z-index: 1;
+        }
+
+        .slide.active {
+            left: 0;
+            opacity: 1;
+            z-index: 2;
+        }
+
+        .slide h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            animation: glow 2s infinite alternate;
+        }
+
+        .slide p {
+            font-size: 1.5em;
+            margin: 0;
+            animation: fadeIn 3s ease-in-out forwards;
+            opacity: 0;
+            max-width: 800px;
+            line-height: 1.5;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #ff9a9e, 0 0 30px #fad0c4;
+            }
+
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff9a9e, 0 0 40px #fad0c4;
+            }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-30px);
+            }
+
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes rise {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-120vh);
+                opacity: 0;
+            }
+        }
+
+        .balloon {
+            position: absolute;
+            bottom: -150px;
+            width: 50px;
+            height: 70px;
+            background-color: #ffcc00;
+            border-radius: 50%;
+            animation: rise 6s infinite ease-in-out;
+            z-index: 1;
+        }
+
+        .balloon:nth-child(2) {
+            left: 20%;
+            background-color: #ff6666;
+            animation-duration: 7s;
+            animation-delay: 1s;
+        }
+
+        .balloon:nth-child(3) {
+            left: 40%;
+            background-color: #66ccff;
+            animation-duration: 5s;
+            animation-delay: 2s;
+        }
+
+        .balloon:nth-child(4) {
+            left: 60%;
+            background-color: #ff99ff;
+            animation-duration: 8s;
+            animation-delay: 3s;
+        }
+
+        .balloon:nth-child(5) {
+            left: 80%;
+            background-color: #99ff99;
+            animation-duration: 6s;
+            animation-delay: 4s;
+        }
+
+        .cake-slide {
+            background: url('https://www.w3schools.com/w3images/cake.jpg') no-repeat center center;
+            background-size: cover;
+            animation: cakeAnimation 3s ease-in-out;
+        }
+
+        @keyframes cakeAnimation {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slides-container">
+        <!-- Slide 1 -->
+        <div class="slide active">
+            <div>
+                <h1>Hari ini adalah hari spesial bagimu, aku tahu</h1>
+                <h1>Dari sekian banyak orang yang mengucapkan selamat ulang tahun untukmu, aku ingin menjadi salah
+                    diantaranya</h1>
+            </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="slide">
+            <div>
+                <h1>Pada malam yang spesial nan indah ini</h1>
+                <h1>Izinkan aku mengucapkan selamat ulang tahun untukmu</h1>
+            </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="slide">
+            <div>
+                <h1>Maaf tidak ku ucapkan secara langsung di depanmu</h1>
+                <h1>Selamat ulang tahun wanita cantik, wanita hebat, wanita tangguh!</h1>
+            </div>
+        </div>
+        <!-- Slide 4 -->
+        <div class="slide">
+            <div>
+                <h1>Tepat di bulan September ini</h1>
+                <h1>Hari dimana kamu di lahirkan ke bumi ini</h1>
+            </div>
+        </div>
+        <!-- Slide 5 -->
+        <div class="slide">
+            <div>
+                <h1>Tak terasa, sudah 19 tahun saja engkau berpijak di semesta ini</h1>
+                <h1>Semoga jalanmu menapak di muka bumi ini di permudah</h1>
+            </div>
+        </div>
+        <!-- Slide 6 -->
+        <div class="slide">
+            <div>
+                <h1>Semoga selalu diberi ketabahan & kesabaran</h1>
+                <h1>Semoga keberkahan selalu menyertai langkahmu</h1>
+            </div>
+        </div>
+        <!-- Slide 7 -->
+        <div class="slide">
+            <div>
+                <h1>Setiap langkahmu adalah melodi indah</h1>
+                <h1>Yang menggema dalam hening malam</h1>
+            </div>
+        </div>
+        <!-- Slide 8 -->
+        <div class="slide">
+            <div>
+                <h1>Semoga hari ini, menjadi awal dari cerita yang penuh warna</h1>
+                <h1>Dalam perjalanan panjang penuh makna, Semoga selalu dihiasi tenang dan bahagia</h1>
+            </div>
+        </div>
+        <!-- Slide 9 -->
+        <div class="slide">
+            <div>
+                <h1>Di pelukan waktu yang lembut</h1>
+                <h1>Semoga impianmu menjadi nyata</h1>
+            </div>
+        </div>
+        <!-- Slide 10 (Final) -->
+        <div class="slide cake-slide">
+            <div>
+                <h1>Selamat ulang tahun Elmia Najwa Maghfiroh</h1>
+                <h1>Harapan dan doa terbaik untukmu</h1>
+            </div>
+        </div>
+        <!-- Balloons for decoration -->
+        <div class="balloons">
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio autoplay loop>
+        <source src="musik/Sempurna.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        let slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function showNextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        setInterval(showNextSlide, 5000); // Slide changes every 6 seconds
+    </script>
+</body>
+
+</html>
